@@ -60,7 +60,10 @@ class SchedulerInstanceRepositoryImpl extends SchedulerInstanceRepository {
       .filter(_.status === LiteralColumn[SchedulerInstanceStatus](SchedulerInstanceStatuses.Active))
       .map(_.lastHeartbeat)
       .update(LocalDateTime.now())
-  }
+  }.flatMap(v => Future {
+    Thread.sleep(30000)
+    v
+  })
 
   override def deactivateLaggingInstances(currentHeartbeat: LocalDateTime, lagTolerance: Duration)(implicit ec: ExecutionContext): Future[Int] = db.run {
     schedulerInstanceTable.filter(i => i.lastHeartbeat < currentHeartbeat.minusSeconds(lagTolerance.getSeconds))

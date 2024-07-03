@@ -87,13 +87,13 @@
         <slick.version>3.3.3</slick.version>
         <tminglei.version>0.19.6</tminglei.version>
         <slick-hikaricp.version>3.3.1</slick-hikaricp.version>
-        <postgresql>42.2.6</postgresql>
+        <postgresql>42.3.9</postgresql>
         <kafka.version>2.2.0</kafka.version>
         <embedded.kafka.version>2.2.0</embedded.kafka.version>
         <play-json.version>2.7.3</play-json.version>
         <play-ws-standalone.version>2.0.3</play-ws-standalone.version>
         <play-ahc-ws-standalone.version>2.0.2</play-ahc-ws-standalone.version>
-        <spring-boot-starter-web.version>2.0.0.RELEASE</spring-boot-starter-web.version>
+        <spring-boot-starter-web.version>2.5.12</spring-boot-starter-web.version>
         <jackson-module.version>2.11.0</jackson-module.version>
         <spring-boot-starter-tomcat.version>2.0.0.RELEASE</spring-boot-starter-tomcat.version>
         <alchim31>3.2.0</alchim31>
@@ -103,7 +103,7 @@
         <slf4j.log4j2.version>1.7.26</slf4j.log4j2.version>
         <spring.ldap.version>5.0.3.RELEASE</spring.ldap.version>
         <scalatest.version>3.0.5</scalatest.version>
-        <h2database.version>1.4.200</h2database.version>
+        <h2database.version>2.2.220</h2database.version>
         <mockito.version>2.25.0</mockito.version>
         <cron-expression-descriptor.version>1.2</cron-expression-descriptor.version>
         <node.version>12.14.1</node.version>
@@ -119,7 +119,7 @@
         <javamelody.spring.boot.starter.version>1.86.0</javamelody.spring.boot.starter.version>
         <buildnumber.maven.plugin.version>1.4</buildnumber.maven.plugin.version>
         <liquibase-maven-plugin.version>3.10.2</liquibase-maven-plugin.version>
-        <snakeyaml.version>1.25</snakeyaml.version>
+        <snakeyaml.version>2.0</snakeyaml.version>
 
         <!-- Deployment -->
         <gpg.plugin.version>1.6</gpg.plugin.version>
